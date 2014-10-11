@@ -9,6 +9,11 @@ thash: com
 	./com thash.c
 	cp thash ../../bin/
 
+sup:
+	make -C ../../extern/sup all
+	cp ../../extern/sup/sup ../../bin/
+
 clean:
 	rm -f *.o
+	make -C ../../extern/sup clean
 	file * | sed 's/://' | grep ELF | awk '{ print $1; }' | xargs rm -f
