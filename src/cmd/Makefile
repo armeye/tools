@@ -1,4 +1,4 @@
-all: com thash
+all: com thash sup auxnumber
 
 com:
 	cc -o com ../../extern/com.c
