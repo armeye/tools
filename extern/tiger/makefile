@@ -1,5 +1,5 @@
 #On all machines with gcc (including Alpha)
-CC = gcc -O3
+CC = cc -O3
 #On 32-bit machines
 #CC = cc -O4
 #On Alpha:
