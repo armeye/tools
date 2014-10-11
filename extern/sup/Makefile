@@ -1,4 +1,4 @@
-CC?=gcc
+CC?=cc
 DESTDIR?=
 PREFIX?=/usr
 VERSION=0.1
