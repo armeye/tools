@@ -9,6 +9,10 @@ thash: com
 	./com thash.c
 	cp thash ../../bin/
 
+auxnumber: com
+	./com auxnumber.c
+	cp auxnumber ../../bin/
+
 sup:
 	make -C ../../extern/sup all
 	cp ../../extern/sup/sup ../../bin/
