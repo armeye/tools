@@ -1,0 +1,8 @@
+#! /bin/sh
+
+manpath=/usr/share/man
+manpage=`find $manpath -name $1.\?.gz | sed 1q`
+
+if [ $manpage ]; then
+	gunzip -c $manpage | mandoc -Tps | 9 page
+fi
