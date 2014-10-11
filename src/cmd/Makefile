@@ -11,7 +11,7 @@ thash: com
 
 auxnumber: com
 	./com auxnumber.c
-	cp auxnumber ../../bin/
+	cp auxnumber ../../bin/aux/number
 
 sup:
 	make -C ../../extern/sup all
