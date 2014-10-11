@@ -9,10 +9,14 @@
  */
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
 int nflag=0;
 int maxstat=0;
 void make(char []);
-main(int argc, char *argv[]){
+int main(int argc, char *argv[]){
 	int i;
 	FILE *fd;
 	char str[8192], *nl;
