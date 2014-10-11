@@ -1,3 +1,5 @@
+all: com thash
+
 com:
 	cc -o com ../../extern/com.c
 	cp com ../../bin/
@@ -8,4 +10,5 @@ thash: com
 	cp thash ../../bin/
 
 clean:
-	rm -f *.o thash
+	rm -f *.o
+	file * | sed 's/://' | grep ELF | awk '{ print $1; }' | xargs rm -f
