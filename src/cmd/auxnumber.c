@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
 			fmt = EARGF(usage());
 			break;
 		default:
-			print(" badflag(%c)", ARGC());
+			print(" badflag(%c)\n", ARGC());
+			return -1;
 	} ARGEND
 
 	number = atoll(argv[0]);
