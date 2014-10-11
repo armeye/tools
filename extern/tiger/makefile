@@ -7,6 +7,12 @@ CC = cc -O3
 
 all : testtiger
 
+lib : tiger.o sboxes.o
+	ar -crs libtiger.a tiger.o sboxes.o
+
+clean:
+	rm -f *.o testtiger libtiger.a
+
 testtiger: testtiger.o tiger.o sboxes.o
 	$(CC) -o testtiger testtiger.o tiger.o sboxes.o
 
