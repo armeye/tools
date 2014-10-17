@@ -8,4 +8,4 @@ LDFLAGS!= pkg-config --libs fuse
 	${LD} -o 9pfuseng ${LDFLAGS} 9pfuseng.o errstr.o
 
 clean:
-	rm -f 9pfuse *.o
+	rm -f 9pfuseng *.o
