@@ -198,7 +198,7 @@ static int p9fsaccess(const char *path, int amode)
 
 	ret = fsaccess(fs, (char *) path, amode);
 
-	if(ret = 0)
+	if(ret == 0)
 		goto OUT;
 
 	if(amode == AEXIST){
