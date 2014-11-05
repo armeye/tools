@@ -1,3 +1,3 @@
-#! /bin/sh
+#! /usr/local/plan9/bin/rc
 
-echo identify foobar > "/home/pk/irc/127.0.0.1/&bitlbee/in"
+echo identify foobar > '/home/pk/irc/127.0.0.1/&bitlbee/in'
