@@ -1,3 +1,3 @@
 #! /bin/sh
 
-tail -20  "/home/pk/irc/127.0.0.1/#twitter_heckenpenner83/out"
+tail -20  "/home/pk/irc/127.0.0.1/#twitter_heckenpenner83/out" | /usr/bin/tr -cd "[:print:]\n"
