@@ -2,5 +2,4 @@
 
 prog=`{awk -F : '{print $1;}' < /home/pk/.mplayer/channels.conf | dmenu}
 
-
-if ( test '$prog' ) av/play dvb://$prog
+if ( test $prog ) exec av/play dvb://$prog
