@@ -1,0 +1,6 @@
+#! /usr/local/plan9/bin/rc
+
+prog=`{awk -F : '{print $1;}' < /home/pk/.mplayer/channels.conf | dmenu}
+
+
+if ( test '$prog' ) av/play dvb://$prog
