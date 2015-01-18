@@ -1,3 +1,3 @@
 #! /bin/sh
 
-mplayer -quiet "$@" | grep "^Playing" 
+mpv -quiet "$@" | grep "^Playing" 
