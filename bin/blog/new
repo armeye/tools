@@ -1,0 +1,6 @@
+#! /bin/sh
+
+post=/usr/home/pk/workbench/armeye.github.io/posts/${1}.htm
+
+cp /usr/home/pk/workbench/tools/bin/blog/template.html $post
+9 B $post
