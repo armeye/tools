@@ -4,10 +4,6 @@ com:
 	cc -o com ../../extern/com.c
 	cp com ../../bin/
 
-file: com
-	./com file.c
-	cp file ../../bin/mfile
-
 thash: com
 	make -C ../../extern/tiger lib
 	./com thash.c
